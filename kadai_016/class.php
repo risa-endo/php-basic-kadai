@@ -16,11 +16,11 @@
         $this->price = $price;
       }
 
-      public function show_price(int $price) {
-        $this->price = $price;
-      }
+      //public function show_price(int $price) {
+        //$this->price = $price;
+      //}
 
-      public function getPrice() {
+      public function show_Price() {
         return $this->price;
       }
     }
@@ -44,11 +44,7 @@
         $this->weight = $weight;
       }
 
-      public function show_height(int $height) {
-        $this->height = $height;
-      }
-
-      public function getHeight() {
+      public function show_Height() {
         return $this->height;
       }
     }
@@ -59,8 +55,8 @@
 
 
     echo '<br>';
-    echo $food->getPrice(). '<br>';
-    echo $animal->getHeight();
+    echo $food->show_Price(). '<br>';
+    echo $animal->show_Height();
     ?>
   </p>
   
