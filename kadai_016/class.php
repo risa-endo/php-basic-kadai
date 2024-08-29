@@ -21,7 +21,7 @@
       //}
 
       public function show_Price() {
-        return $this->price;
+      echo $this->price . '<br>';
       }
     }
 
@@ -33,30 +33,32 @@
   </p>
   <p>
     <?php
-    class Animal {
-      private $name;
-      private $height;
-      private $weight;
+    //クラスを定義
+      class Animal {
+        private $name;
+        private $height;
+        private $weight;
 
-      public function __construct(string $name, int $height, int $weight) {
+      //コンストラクタを定義
+        public function __construct(string $name, int $height, int $weight) {
         $this->name = $name;
         $this->height = $height;
         $this->weight = $weight;
       }
 
-      public function show_Height() {
-        return $this->height;
+        public function show_Height() {
+        echo $this->height . '<br>';
+        }
       }
-    }
-
+      //インスタンス化
     $animal = new Animal('dog', 60, 5000);
-
     print_r($animal);
 
+      echo '<br>';
+      
+      $food->show_Price();
 
-    echo '<br>';
-    echo $food->show_Price(). '<br>';
-    echo $animal->show_Height();
+      $animal->show_Height();
     ?>
   </p>
   
